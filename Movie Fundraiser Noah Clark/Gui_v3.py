@@ -59,6 +59,9 @@ def submit_ticket():
         print(name)
     ticket_price = check_age(age)
     
+    if ticket_price == -1:
+        return
+
     all_names.append(name)
     all_ticket_costs.append(ticket_price)
 
